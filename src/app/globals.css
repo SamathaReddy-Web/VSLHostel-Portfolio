@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8b5cf6; /* violet-500 */
+  --color-primary-dark: #7c3aed; /* violet-600 */
+  --color-primary-light: #ddd6fe; /* violet-200 */
+  --color-secondary: #ec4899; /* pink-500 */
+  --color-secondary-dark: #db2777; /* pink-600 */
+  --color-neutral-bg: #f8fafc;
+  --color-neutral-text: #0f172a;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-neutral-bg);
+    --foreground: var(--color-neutral-text);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
