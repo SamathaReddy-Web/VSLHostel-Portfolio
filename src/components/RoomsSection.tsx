@@ -15,7 +15,6 @@ export default function RoomsSection() {
       image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Perfect balance of companionship and personal space. Ideal for friends or collogues.",
       highlights: ["Spacious layout", "Individual wardrobes", "Shared amenities"],
-      popular: true,
     },
     {
       title: "Triple Sharing",
@@ -23,6 +22,13 @@ export default function RoomsSection() {
       image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Highly social and economical option without compromising on comfort and basic needs.",
       highlights: ["Budget-friendly", "Community vibe", "Ample storage"],
+    },
+    {
+      title: "Four Sharing",
+      icon: <Users size={40} className="text-secondary mb-4" />,
+      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Most affordable and vibrant option. Great for networking and building lasting friendships while keeping costs low.",
+      highlights: ["Maximum affordability", "Vibrant community", "Spacious shared living"],
     },
   ];
 
@@ -76,7 +82,7 @@ export default function RoomsSection() {
                 </ul>
 
                 <a 
-                  href="https://wa.me/919573779268" 
+                  href={`https://wa.me/919573779268?text=${encodeURIComponent(`Hi! I am interested in ${room.title} at Vasantha Lakshmi Women's PG. Could you please share the availability and pricing?`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full py-3 text-center rounded-xl font-semibold transition-colors ${

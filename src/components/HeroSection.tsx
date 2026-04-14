@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
         <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight drop-shadow-lg leading-tight">
           Affordable & Safe <br className="hidden md:block" />
-          <span className="text-primary-light">Women's PG in Gachibowli</span>
+          <span className="text-primary-light">Women's PG in Nanakramguda</span>
         </h1>
         
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200 drop-shadow-md">

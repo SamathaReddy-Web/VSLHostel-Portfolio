@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Affordable, safe, and comfortable women's PG located in the heart of Gachibowli. Your home away from home.
+              Affordable, safe, and comfortable women's PG located in the heart of Nanakramguda. Your home away from home.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <MapPin size={20} className="text-primary shrink-0 mt-1" />
                 <span>
                   Vinayak Nagar, Nanakramguda,<br />
-                  Gachibowli, Hyderabad,<br />
+                  Hyderabad,<br />
                   Telangana – 500032
                 </span>
               </li>

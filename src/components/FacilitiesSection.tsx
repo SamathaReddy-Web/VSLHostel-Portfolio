@@ -1,4 +1,4 @@
-import { Wifi, Snowflake, Droplets, WashingMachine, Tv, Lock, Utensils, Coffee } from "lucide-react";
+import { Wifi, Snowflake, Droplets, WashingMachine, Tv, Lock, Utensils, Coffee, Zap } from "lucide-react";
 
 export default function FacilitiesSection() {
   const facilities = [
@@ -10,6 +10,7 @@ export default function FacilitiesSection() {
     { icon: <Tv size={32} />, name: "Television", desc: "Entertainment in common areas" },
     { icon: <Lock size={32} />, name: "Secure Lockers", desc: "Personal lockers for valuables" },
     { icon: <Coffee size={32} />, name: "Drinking Water", desc: "RO purified drinking water" },
+    { icon: <Zap size={32} />, name: "Power Backup", desc: "Uninterrupted power supply with 24/7 generator backup" },
   ];
 
   return (

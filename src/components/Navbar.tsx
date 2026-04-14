@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, PhoneCall } from "lucide-react";
 
 export default function Navbar() {
@@ -13,6 +13,29 @@ export default function Navbar() {
     { name: "Facilities", href: "#facilities" },
     { name: "Contact", href: "#contact" },
   ];
+
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100;
+      
+      for (const link of navLinks) {
+        const sectionId = link.href.substring(1);
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(sectionId);
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check on mount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
@@ -32,7 +55,11 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-600 hover:text-primary transition-colors duration-200"
+                className={`transition-colors duration-200 ${
+                  activeSection === link.href.substring(1)
+                    ? "text-primary font-bold"
+                    : "text-gray-600 hover:text-primary"
+                }`}
               >
                 {link.name}
               </a>
@@ -66,7 +93,11 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-primary-light/20 rounded-md transition-colors"
+                className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
+                  activeSection === link.href.substring(1)
+                    ? "text-primary bg-primary-light/10 font-bold"
+                    : "text-gray-600 hover:text-primary hover:bg-primary-light/20"
+                }`}
               >
                 {link.name}
               </a>
