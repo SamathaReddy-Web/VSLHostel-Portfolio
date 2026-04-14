@@ -7,15 +7,33 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({ name: "", phone: "", message: "" });
   const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
-    // Simulate form submission
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", phone: "", message: "" });
-      setTimeout(() => setStatus("idle"), 3000);
-    }, 1500);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", phone: "", message: "" });
+        setTimeout(() => setStatus("idle"), 3000);
+      } else {
+        console.error("Failed to send message via Resend");
+        setStatus("idle");
+        alert("Failed to send the message. Please contact us via phone or WhatsApp.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("idle");
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   return (
@@ -65,13 +83,15 @@ export default function ContactSection() {
                   </div>
                 </a>
 
-                <a href="mailto:info@vasanthalakshmipg.com" className="flex items-center gap-4 group">
-                  <div className="p-3 bg-white/10 rounded-full group-hover:bg-white group-hover:text-primary transition-all duration-300">
+                <a href="mailto:Venkatanaidu561@gmail.com" className="flex items-center gap-4 group">
+                  <div className="p-3 bg-white/10 rounded-full group-hover:bg-white group-hover:text-primary transition-all duration-300 shrink-0">
                     <Mail size={24} />
                   </div>
-                  <div>
+                  <div className="min-w-0 pr-2">
                     <p className="text-sm text-primary-light">Email Address</p>
-                    <p className="font-semibold text-lg">info@vasanthalakshmipg.com</p>
+                    <p className="font-semibold text-[15px] sm:text-[17px] truncate" title="Venkatanaidu561@gmail.com">
+                      Venkatanaidu561@gmail.com
+                    </p>
                   </div>
                 </a>
               </div>

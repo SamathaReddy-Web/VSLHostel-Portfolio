@@ -24,17 +24,21 @@ export default function FacilitiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {facilities.map((fac, index) => (
             <div 
               key={index} 
-              className="group bg-neutral-bg rounded-2xl p-6 text-center hover:bg-primary transition-colors duration-300 shadow-sm hover:shadow-xl"
+              className="group bg-white rounded-2xl p-6 flex flex-col justify-start hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-primary/30"
             >
-              <div className="mx-auto w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-white group-hover:bg-primary-dark transition-colors duration-300 mb-4 shadow-sm">
-                {fac.icon}
+              <div className="flex items-start gap-5">
+                <div className="w-14 h-14 bg-primary-light/10 rounded-xl flex flex-shrink-0 items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  {fac.icon}
+                </div>
+                <div className="flex-1 mt-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 leading-tight tracking-tight">{fac.name}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{fac.desc}</p>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-2">{fac.name}</h3>
-              <p className="text-gray-500 text-sm group-hover:text-primary-light">{fac.desc}</p>
             </div>
           ))}
         </div>

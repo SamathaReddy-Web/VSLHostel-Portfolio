@@ -41,12 +41,14 @@ export default function Navbar() {
     <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-2">
-            <div className="bg-primary text-white font-bold text-xl px-3 py-1 rounded-md">
-              VL
-            </div>
-            <span className="font-semibold text-gray-800 text-lg hidden sm:block">
-              Women's PG
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776182580/ChatGPT_Image_Apr_14_2026_09_32_42_PM_obi2ei.png" 
+              alt="VSL Women's PG Logo" 
+              className="w-10 h-10 object-contain rounded-full shadow-sm border border-gray-100"
+            />
+            <span className="font-bold text-gray-900 text-xl hidden sm:block">
+              VSL Women's PG
             </span>
           </div>
 
