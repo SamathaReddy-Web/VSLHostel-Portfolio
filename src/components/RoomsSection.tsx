@@ -1,7 +1,16 @@
 import { Users, User, UserPlus, CheckCircle2 } from "lucide-react";
 
+type Room = {
+  title: string;
+  icon: React.ReactNode;
+  image: string;
+  description: string;
+  highlights: string[];
+  popular?: boolean;
+};
+
 export default function RoomsSection() {
-  const rooms = [
+  const rooms: Room[] = [
     {
       title: "Single Sharing",
       icon: <User size={40} className="text-secondary mb-4" />,
