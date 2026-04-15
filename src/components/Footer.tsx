@@ -7,16 +7,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand & About */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="bg-primary text-white font-bold text-xl px-2 py-1 rounded-md">
-                VL
+            <div className="flex items-center gap-3 mb-5">
+              <div className="bg-white p-1 rounded-full inline-block">
+                <img 
+                  src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776182580/ChatGPT_Image_Apr_14_2026_09_32_42_PM_obi2ei.png" 
+                  alt="VSL Women's PG Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
-              <span className="font-semibold text-white text-xl">
-                Vasantha Lakshmi
+              <span className="font-bold text-white text-2xl">
+                VSL Women's PG
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Affordable, safe, and comfortable women's PG located in the heart of Gachibowli. Your home away from home.
+              Affordable, safe, and comfortable women's PG located in the heart of Nanakramguda. Your home away from home.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -58,7 +62,7 @@ export default function Footer() {
                 <MapPin size={20} className="text-primary shrink-0 mt-1" />
                 <span>
                   Vinayak Nagar, Nanakramguda,<br />
-                  Gachibowli, Hyderabad,<br />
+                  Hyderabad,<br />
                   Telangana – 500032
                 </span>
               </li>
@@ -70,8 +74,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-primary shrink-0" />
-                <a href="mailto:info@vasanthalakshmipg.com" className="hover:text-white transition-colors">
-                  info@vasanthalakshmipg.com
+                <a href="mailto:Venkatanaidu561@gmail.com" className="hover:text-white transition-colors">
+                  Venkatanaidu561@gmail.com
                 </a>
               </li>
             </ul>
@@ -79,7 +83,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Vasantha Lakshmi Women's PG. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} VSL Women's PG. All rights reserved.</p>
         </div>
       </div>
     </footer>

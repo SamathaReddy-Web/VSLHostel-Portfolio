@@ -8,7 +8,7 @@ export default function LocationSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Prime Location</h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Conveniently situated in the heart of Gachibowli, ensuring easy daily commutes and close proximity to major landmarks.
+            Conveniently situated in the heart of Nanakramguda, ensuring easy daily commutes and close proximity to major landmarks.
           </p>
         </div>
 
@@ -21,10 +21,10 @@ export default function LocationSection() {
                 <h3 className="text-xl font-bold text-gray-900">Address</h3>
               </div>
               <p className="text-gray-600 leading-relaxed pl-9">
-                Vasantha Lakshmi Women's PG<br/>
-                Vinayak Nagar, Nanakramguda,<br/>
-                Gachibowli, Hyderabad,<br/>
-                Telangana – 500032
+                C992+F35, Serilingampally,<br/>
+                K.V, Nanakramguda,<br/>
+                Hyderabad,<br/>
+                Telangana
               </p>
             </div>
 
@@ -54,7 +54,7 @@ export default function LocationSection() {
             </div>
 
             <a 
-              href="https://maps.google.com/?q=Nanakramguda+Gachibowli+Hyderabad" 
+              href="https://maps.google.com/?q=C992%2BF35,+Serilingampally,+K.V,+Nanakramguda,+Hyderabad,+Telangana" 
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-4 w-full block text-center py-4 bg-primary-light/20 hover:bg-primary text-primary-dark hover:text-white font-semibold rounded-xl transition-colors duration-300"
@@ -67,7 +67,7 @@ export default function LocationSection() {
           <div className="col-span-1 lg:col-span-2 min-h-[400px]">
              {/* Using a Google Maps embed iframe */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15228.618037303358!2d78.33785641755106!3d17.404368551475727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb945bbee9f9fb%3A0xa67dc7e780c85ca0!2sNanakramguda%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=C992%2BF35%2C%20Serilingampally%2C%20K.V%2C%20Nanakramguda%2C%20Hyderabad%2C%20Telangana&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "400px" }}

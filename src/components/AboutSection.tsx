@@ -18,7 +18,7 @@ export default function AboutSection() {
               Vasantha Lakshmi Women&apos;s PG provides a safe, comfortable, and affordable living space exclusively for students and working professional women. We pride ourselves on offering a home-like environment where residents can focus on their studies or careers with peace of mind.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Located strategically in Gachibowli, we are just minutes away from major IT hubs, the Financial District, Hitech City, and top educational colleges.
+              Located strategically in Nanakramguda, we are just minutes away from major IT hubs, the Financial District, Hitech City, and top educational colleges.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">

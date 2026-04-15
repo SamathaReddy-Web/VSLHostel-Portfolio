@@ -1,28 +1,43 @@
 import { Users, User, UserPlus, CheckCircle2 } from "lucide-react";
 
+type Room = {
+  title: string;
+  icon: React.ReactNode;
+  image: string;
+  description: string;
+  highlights: string[];
+  popular?: boolean;
+};
+
 export default function RoomsSection() {
-  const rooms = [
+  const rooms: Room[] = [
     {
       title: "Single Sharing",
       icon: <User size={40} className="text-secondary mb-4" />,
       image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Complete privacy and comfort for focused studying or unwinding after a long day at work.",
-      highlights: ["Private space", "Dedicated study desk", "Premium mattress"],
+      highlights: ["Ultimate privacy & comfort", "Premium customized bedding", "All premium amenities included"],
     },
     {
       title: "Double Sharing",
       icon: <Users size={40} className="text-secondary mb-4" />,
       image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Perfect balance of companionship and personal space. Ideal for friends or collogues.",
-      highlights: ["Spacious layout", "Individual wardrobes", "Shared amenities"],
-      popular: true,
+      highlights: ["Spacious shared layout", "Individual storage spaces", "All premium amenities included"],
     },
     {
       title: "Triple Sharing",
       icon: <UserPlus size={40} className="text-secondary mb-4" />,
       image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Highly social and economical option without compromising on comfort and basic needs.",
-      highlights: ["Budget-friendly", "Community vibe", "Ample storage"],
+      highlights: ["Extremely budget-friendly", "Vibrant community vibe", "All premium amenities included"],
+    },
+    {
+      title: "Four Sharing",
+      icon: <Users size={40} className="text-secondary mb-4" />,
+      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Most affordable and vibrant option. Great for networking and building lasting friendships while keeping costs low.",
+      highlights: ["Maximum affordability", "Great for networking", "All premium amenities included"],
     },
   ];
 
@@ -37,7 +52,7 @@ export default function RoomsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {rooms.map((room, index) => (
             <div 
               key={index} 
@@ -76,7 +91,7 @@ export default function RoomsSection() {
                 </ul>
 
                 <a 
-                  href="https://wa.me/919573779268" 
+                  href={`https://wa.me/919573779268?text=${encodeURIComponent(`Hi! I am interested in ${room.title} at Vasantha Lakshmi Women's PG. Could you please share the availability and pricing?`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full py-3 text-center rounded-xl font-semibold transition-colors ${
