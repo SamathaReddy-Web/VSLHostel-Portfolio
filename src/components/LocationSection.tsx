@@ -21,10 +21,10 @@ export default function LocationSection() {
                 <h3 className="text-xl font-bold text-gray-900">Address</h3>
               </div>
               <p className="text-gray-600 leading-relaxed pl-9">
-                Vasantha Lakshmi Women's PG<br/>
-                Vinayak Nagar, Nanakramguda,<br/>
+                C992+F35, Serilingampally,<br/>
+                K.V, Nanakramguda,<br/>
                 Hyderabad,<br/>
-                Telangana – 500032
+                Telangana
               </p>
             </div>
 
@@ -54,7 +54,7 @@ export default function LocationSection() {
             </div>
 
             <a 
-              href="https://maps.google.com/?q=Vasantha+Lakshmi+Women's+PG,+Vinayak+Nagar,+Nanakramguda,+Hyderabad,+Telangana+-+500032" 
+              href="https://maps.google.com/?q=C992%2BF35,+Serilingampally,+K.V,+Nanakramguda,+Hyderabad,+Telangana" 
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-4 w-full block text-center py-4 bg-primary-light/20 hover:bg-primary text-primary-dark hover:text-white font-semibold rounded-xl transition-colors duration-300"
@@ -67,7 +67,7 @@ export default function LocationSection() {
           <div className="col-span-1 lg:col-span-2 min-h-[400px]">
              {/* Using a Google Maps embed iframe */}
             <iframe
-              src="https://maps.google.com/maps?q=Vasantha%20Lakshmi%20Women's%20PG%2C%20Vinayak%20Nagar%2C%20Nanakramguda%2C%20Hyderabad%2C%20Telangana%20500032&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=C992%2BF35%2C%20Serilingampally%2C%20K.V%2C%20Nanakramguda%2C%20Hyderabad%2C%20Telangana&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "400px" }}

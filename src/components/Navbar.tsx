@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
             <img 
-              src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776182580/ChatGPT_Image_Apr_14_2026_09_32_42_PM_obi2ei.png" 
+              src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776275480/ChatGPT_Image_Apr_15_2026_11_21_08_PM_g893u2.png" 
               alt="VSL Women's PG Logo" 
               className="w-10 h-10 object-contain rounded-full shadow-sm border border-gray-100"
             />
