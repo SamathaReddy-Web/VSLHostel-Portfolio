@@ -47,7 +47,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-primary/10 rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              src="https://res.cloudinary.com/dkny5wde0/image/upload/q_auto/f_auto/v1776291593/Screenshot_2026-04-16_033559_t1w1jq.png" 
               alt="Comfortable living space" 
               className="rounded-3xl shadow-xl w-full h-[500px] object-cover"
             />
