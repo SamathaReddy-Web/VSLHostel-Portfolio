@@ -89,8 +89,8 @@ export default function ContactSection() {
                   </div>
                   <div className="min-w-0 pr-2">
                     <p className="text-sm text-primary-light">Email Address</p>
-                    <p className="font-semibold text-[15px] sm:text-[17px] truncate" title="Venkatanaidu561@gmail.com">
-                      Venkatanaidu561@gmail.com
+                    <p className="font-semibold text-[15px] sm:text-[17px] truncate" title="venkatanaidu561@gmail.com">
+                      venkatanaidu561@gmail.com
                     </p>
                   </div>
                 </a>

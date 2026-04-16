@@ -57,7 +57,7 @@ export default function AboutSection() {
                 <Heart size={32} />
               </div>
               <div>
-                <p className="text-3xl font-bold text-gray-900">4.4/5</p>
+                <p className="text-3xl font-bold text-gray-900">5/5</p>
                 <p className="text-gray-500 font-medium">Happy Residents</p>
               </div>
             </div>
