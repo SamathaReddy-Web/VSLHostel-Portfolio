@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
-
-export default function Footer() {
+import Image from "next/image";export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -9,9 +8,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <div className="bg-white p-0.5 rounded-full inline-block shadow-sm">
-                <img 
+                <Image 
                   src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776275480/ChatGPT_Image_Apr_15_2026_11_21_08_PM_g893u2.png" 
-                  alt="VSL Women's PG Logo" 
+                  alt="Vasantha Lakshmi Women's PG Logo" 
+                  width={40}
+                  height={40}
                   className="w-10 h-10 object-contain rounded-full"
                 />
               </div>

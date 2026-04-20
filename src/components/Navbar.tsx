@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, PhoneCall } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,11 +43,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
-            <img 
-              src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776275480/ChatGPT_Image_Apr_15_2026_11_21_08_PM_g893u2.png" 
-              alt="VSL Women's PG Logo" 
-              className="w-10 h-10 object-contain rounded-full shadow-sm border border-gray-100"
-            />
+            <div className="bg-white p-0.5 rounded-full inline-block shadow-sm border border-gray-100">
+              <Image 
+                src="https://res.cloudinary.com/ds9pcviv3/image/upload/v1776275480/ChatGPT_Image_Apr_15_2026_11_21_08_PM_g893u2.png" 
+                alt="Vasantha Lakshmi Women's PG Nanakramguda Logo" 
+                width={40}
+                height={40}
+                className="w-10 h-10 object-contain rounded-full"
+              />
+            </div>
             <span className="font-bold text-gray-900 text-xl hidden sm:block">
               VSL Women's PG
             </span>

@@ -7,10 +7,13 @@ export default function HeroSection() {
       {/* Background Image Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/40 z-10" />
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80"
-          alt="Hostel Room"
-          className="w-full h-full object-cover"
+          alt="Premium and comfortable women's hostel room in Nanakramguda"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
       </div>
 

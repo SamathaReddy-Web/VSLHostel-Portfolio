@@ -1,6 +1,5 @@
 import { ShieldCheck, MapPin, Heart } from "lucide-react";
-
-export default function AboutSection() {
+import Image from "next/image";export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,12 +43,14 @@ export default function AboutSection() {
             </div>
           </div>
           
-          <div className="relative">
+          <div className="relative h-[500px] w-full">
             <div className="absolute inset-0 bg-primary/10 rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
-            <img 
+            <Image 
               src="https://res.cloudinary.com/dkny5wde0/image/upload/q_auto/f_auto/v1776291593/Screenshot_2026-04-16_033559_t1w1jq.png" 
-              alt="Comfortable living space" 
-              className="rounded-3xl shadow-xl w-full h-[500px] object-cover"
+              alt="Comfortable and secure living space at Vasantha Lakshmi Women's PG" 
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-3xl shadow-xl object-cover"
             />
             
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-4">

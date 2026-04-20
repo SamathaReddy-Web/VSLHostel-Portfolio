@@ -1,6 +1,5 @@
 import { Users, User, UserPlus, CheckCircle2 } from "lucide-react";
-
-type Room = {
+import Image from "next/image";type Room = {
   title: string;
   icon: React.ReactNode;
   image: string;
@@ -64,10 +63,12 @@ export default function RoomsSection() {
                 </div>
               )}
               <div className="h-64 overflow-hidden relative group">
-                <img 
+                <Image 
                   src={room.image} 
-                  alt={room.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt={`Vasantha Lakshmi PG - ${room.title} Hostel Room`} 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-6 text-white text-2xl font-bold">
